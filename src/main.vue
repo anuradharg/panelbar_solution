@@ -111,12 +111,10 @@ export default {
         },
          methods: {
               addConfigurableSection: function(e){
-                //debugger
                 let csCount = this.ConfigurableSectionCount + 1;
                 let configurableSectionHeader= {
                         name: "Configurable Section " + csCount
-                    }
-                //let reservoirSectionData = this.reservoirData;                
+                    }             
                 let grpHeaders = JSON.parse(JSON.stringify(this.groupHeaders));
 
                 const mainSection = "Section 3"
@@ -132,7 +130,6 @@ export default {
                 this.groupHeaders=grpHeaders;
                 this.ConfigurableSectionCount = csCount;
                 this.reRender+=1;
-                //debugger
             },
             
             getSections: function (GroupHeaderName) {
